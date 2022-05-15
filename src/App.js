@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 const App = () => {
-  let number = 123;
+  const [number,setNumber] = useState(123);
   const incrementHandler = () => {
-    number +=1;
-    console.log(number);
+    setNumber(number + 1);
   };
   return (
     <div>

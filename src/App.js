@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 const App = () => {
-  const [number, setNumber] = useState([1, 2, 3]);
+  function checkExecuted() {
+    console.log("被執行了");
+    return 0;
+  }
+  const [string, setString] = useState(checkExecuted());
   const incrementHandler = () => {
-
-    setNumber((prev) => (
-      [...prev, prev[prev.length - 1] + 1]
-    ))
-
+    setString((prev) => (prev + 1));
   };
   return (
     <div>
-      <div>{number[number.length - 1]}</div>
+      <div>{string}</div>
       <button onClick={incrementHandler}>+</button>
     </div>
   );

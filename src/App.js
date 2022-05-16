@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 const App = () => {
-  const [number, setNumber] = useState(123);
+  const [number, setNumber] = useState([1, 2, 3]);
   const incrementHandler = () => {
-    setTimeout(function delay() {
-      setNumber((prev)=>(prev + 1));
-    }, 1000);
+
+    setNumber((prev) => (
+      [...prev, prev[prev.length - 1] + 1]
+    ))
 
   };
   return (
     <div>
-      <div>{number}</div>
+      <div>{number[number.length - 1]}</div>
       <button onClick={incrementHandler}>+</button>
     </div>
   );

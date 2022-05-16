@@ -3,7 +3,7 @@ const App = () => {
   const [number, setNumber] = useState(123);
   const incrementHandler = () => {
     setTimeout(function delay() {
-      setNumber(number + 1);
+      setNumber((prev)=>(prev + 1));
     }, 1000);
 
   };

@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 const App = () => {
-  function checkExecuted() {
+  const [string, setString] = useState(() => {
     console.log("被執行了");
     return 0;
-  }
-  const [string, setString] = useState(checkExecuted());
+  });
   const incrementHandler = () => {
     setString((prev) => (prev + 1));
   };

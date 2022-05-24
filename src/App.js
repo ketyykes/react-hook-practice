@@ -1,18 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 const App = () => {
-  const [string, setString] = useState(() => {
-    console.log("被執行了");
-    return 0;
-  });
+  useEffect(() => { console.log("我只印一次"); }, [])
+  const [number, setNumber] = useState(0);
   const incrementHandler = () => {
-    setString((prev) => (prev + 1));
+    setNumber((prev) => (prev + 1));
   };
   return (
     <div>
-      <div>{string}</div>
+      <div>{number}</div>
       <button onClick={incrementHandler}>+</button>
     </div>
   );
-}
 
+}
 export default App

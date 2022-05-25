@@ -6,6 +6,9 @@ const App = () => {
       const event = new Date();
       console.log(event.toUTCString());
     }, number * 2000);
+    return () => {
+      clearInterval(interval);
+    }
   }, [number]);
   const clickHandler = () => {
     setNumber((pre) => (pre + 1));

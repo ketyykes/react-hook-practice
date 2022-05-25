@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react'
 const App = () => {
-  useEffect(() => { console.log("我只印很多次"); })
-  const [number, setNumber] = useState(0);
-  const [string, setString] = useState("");
-  const incrementHandler = () => {
-    setNumber((prev) => (prev + 1));
-  };
+  const [number, setNumber] = useState(1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const event = new Date();
+      console.log(event.toUTCString());
+    }, number * 2000);
+  }, [number]);
+  const clickHandler = () => {
+    setNumber((pre) => (pre + 1));
+  }
   return (
     <div>
-      <div>{number}</div>
-      <button onClick={incrementHandler}>+</button>
+      {number}
       <br />
-      <input type="text" onChange={(e) => setString(e.target.value)} />
-      <div>{string}</div>
+      <button onClick={clickHandler}>按鈕</button>
     </div>
-  );
+  )
 }
+
 export default App

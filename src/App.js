@@ -1,25 +1,20 @@
 import React, { useState, useEffect } from 'react'
 const App = () => {
-  const [number, setNumber] = useState(1);
+  const [timeCountdown, setCountdown] = useState(60);
   useEffect(() => {
-    const interval = setInterval(() => {
-      const event = new Date();
-      console.log(event.toUTCString());
-    }, number * 2000);
-    return () => {
-      clearInterval(interval);
-    }
-  }, [number]);
-  const clickHandler = () => {
-    setNumber((pre) => (pre + 1));
-  }
+    if (!timeCountdown) return;
+    const intervalId = setInterval(() => {
+      setCountdown((prev) => (prev - 1));
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+
+  }, [timeCountdown]);
   return (
     <div>
-      {number}
-      <br />
-      <button onClick={clickHandler}>按鈕</button>
+      <h1>{timeCountdown}</h1>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

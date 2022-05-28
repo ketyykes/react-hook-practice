@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { UserContext } from './createUserContext'
 const Elevator3 = () => {
+    const name = useContext(UserContext);
     return (
         <>
-            <UserContext.Consumer>
-                {value => <h1>{value}</h1>}
-            </UserContext.Consumer>
+            <h1>{name}</h1>
         </>
     )
 }

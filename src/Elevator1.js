@@ -1,9 +1,9 @@
 import React from 'react'
 import Elevator2 from './Elevator2'
-const Elevator1 = ({ user }) => {
+const Elevator1 = () => {
     return (
         <>
-            <Elevator2 user={user}/>
+            <Elevator2 />
         </>
     )
 }

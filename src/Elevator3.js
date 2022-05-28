@@ -1,8 +1,11 @@
 import React from 'react'
-const Elevator3 = ({ user }) => {
+import { UserContext } from './createUserContext'
+const Elevator3 = () => {
     return (
         <>
-            {`Hello${user}`}
+            <UserContext.Consumer>
+                {value => <h1>{value}</h1>}
+            </UserContext.Consumer>
         </>
     )
 }

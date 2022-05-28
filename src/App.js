@@ -7,7 +7,9 @@ const App = () => {
   return (
     <>
       <UserContext.Provider value={user}>
-        <Elevator1 />
+        <UserContext.Provider value={"test"}>
+          <Elevator1 />
+        </UserContext.Provider >
       </UserContext.Provider>
     </>
 

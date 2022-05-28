@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { UserContext } from './createUserContext'
-const Elevator3 = () => {
+const Elevator3 = (props) => {
     const name = useContext(UserContext);
     return (
         <>

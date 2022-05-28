@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from "react";
+import Elevator1 from './Elevator1'
 const App = () => {
-  const [timeCountdown, setCountdown] = useState(60);
-  useEffect(() => {
-    if (!timeCountdown) return;
-    const intervalId = setInterval(() => {
-      setCountdown((prev) => (prev - 1));
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-
-  }, [timeCountdown]);
+  const [user, setUser] = useState("Tim");
   return (
-    <div>
-      <h1>{timeCountdown}</h1>
-    </div>
-  );
-};
+    <>
+      <Elevator1 user={user} />
+    </>
 
-export default App;
+  );
+}
+
+export default App

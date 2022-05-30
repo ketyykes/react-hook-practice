@@ -5,9 +5,9 @@ function Counter() {
     function reducer(state, action) {
         switch (action.type) {
             case 'increment':
-                return { count: state.count + 1 };
+                return { count: state.count + action.payload };
             case 'decrement':
-                return { count: state.count - 1 };
+                return { count: state.count - action.payload };
             default:
                 throw new Error();
         }
@@ -16,8 +16,8 @@ function Counter() {
     return (
         <>
             Count: {state.count}
-            <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
-            <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+            <button onClick={() => dispatch({ type: 'decrement', payload: 1 })}>-</button>
+            <button onClick={() => dispatch({ type: 'increment', payload: 1 })}>+</button>
         </>
     );
 }

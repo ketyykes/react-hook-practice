@@ -1,17 +1,7 @@
 import React, { useReducer } from 'react';
-
+import reducer from './reducer';
+import initialState from './initialState'
 function Counter() {
-    const initialState = { count: 0 };
-    function reducer(state, action) {
-        switch (action.type) {
-            case 'increment':
-                return { count: state.count + action.payload };
-            case 'decrement':
-                return { count: state.count - action.payload };
-            default:
-                throw new Error();
-        }
-    }
     const [state, dispatch] = useReducer(reducer, initialState);
     return (
         <>

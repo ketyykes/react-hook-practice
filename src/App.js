@@ -18,6 +18,5 @@ const App = () => {
       <button onClick={clickHandler}>+</button>
     </div>
   );
-
 }
 export default App

@@ -1,5 +1,6 @@
 # useState、useEffect、useContext、useReducer解說特性
 
+以下撰寫各個branch內含的程式碼結構
 - noHookNoRender
   - 沒有搭配Hook無法渲染畫面
 - useStateButNoUpdateFunction
@@ -36,7 +37,7 @@
   - 使用useReducer將reducer拆出
 - useReducerAddPayload
   - 使用useReducer添加payload
-- useReducerAddPayload
+- separateReducerAndInitialState
   -  使用useReducer拆分出initialState
-- 
-
+- useReducerDinefineActiontypeActionCreater
+  - 使用useReducer定義actionType和actionCreater

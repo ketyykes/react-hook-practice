@@ -1,6 +1,6 @@
 # useState、useEffect、useContext、useReducer解說特性
 
-以下撰寫各個branch內含的程式碼結構
+以下為各個branch名稱和內容的大綱
 - noHookNoRender
   - 沒有搭配Hook無法渲染畫面
 - useStateButNoUpdateFunction

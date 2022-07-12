@@ -9,7 +9,7 @@ const App = () => {
     id: Date.now(),
     done: false
   }])
-
+  const test = {}
   return (
     <>
       <div>{number}</div>
@@ -31,7 +31,7 @@ const App = () => {
         })
 
       }}>添加代辦事項</button>
-      <Todo listData={listData} number={number} />
+      <Todo listData={listData} />
     </>
   )
 }

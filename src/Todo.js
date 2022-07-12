@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
-const Todo = ({ listData }) => {
-    console.log("我被執行了");
+const Todo = ({ listData, number }) => {
+    console.log(number);
     return (
         <>
             {listData.map((element, index) => {

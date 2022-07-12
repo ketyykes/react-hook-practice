@@ -42,6 +42,11 @@
 - useReducerDinefineActiontypeActionCreater
   - 使用useReducer定義actionType和actionCreater
 - memoChildComponentRender
-  - 未使用React.memo 
+  - 未使用React.memo
 - memoWrapChildComponent
-  - 使用memo包裹住component
+  - 使用React.memo包裹住component
+- memoButPropsIsObject
+  - 使用Reactmemo但是prop是物件
+- memoAddNumberProps
+  - 使用指定的prop作為memo重新渲染的依據
+

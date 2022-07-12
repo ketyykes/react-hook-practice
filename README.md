@@ -41,3 +41,7 @@
   -  使用useReducer拆分出initialState
 - useReducerDinefineActiontypeActionCreater
   - 使用useReducer定義actionType和actionCreater
+- memoChildComponentRender
+  - 未使用React.memo 
+- memoWrapChildComponent
+  - 使用memo包裹住component

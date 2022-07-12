@@ -31,7 +31,7 @@ const App = () => {
         })
 
       }}>添加代辦事項</button>
-      <Todo listData={listData} />
+      <Todo listData={listData} test={test} />
     </>
   )
 }

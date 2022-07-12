@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Todo = ({ listData }) => {
+    console.log("test");
     return (
         <>
             {listData.map((element, index) => {

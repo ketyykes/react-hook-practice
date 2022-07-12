@@ -1,7 +1,6 @@
-import React from 'react'
-
+import React, { memo } from 'react'
 const Todo = ({ listData }) => {
-    console.log("test");
+    console.log("我被執行了");
     return (
         <>
             {listData.map((element, index) => {
@@ -10,5 +9,4 @@ const Todo = ({ listData }) => {
         </>
     )
 }
-
-export default Todo;
+export default memo(Todo);

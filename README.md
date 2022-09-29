@@ -49,4 +49,5 @@
   - 使用Reactmemo但是prop是物件
 - memoAddNumberProps
   - 使用指定的prop作為memo重新渲染的依據
-
+- useRefInitHello
+  - 使用useRef代入字串"hello"

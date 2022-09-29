@@ -51,3 +51,5 @@
   - 使用指定的prop作為memo重新渲染的依據
 - useRefInitHello
   - 使用useRef代入字串"hello"
+- useRefOnClickAndFocusInput
+  - 使用useRef聚焦input輸入框 

@@ -53,3 +53,5 @@
   - 使用useRef代入字串"hello"
 - useRefOnClickAndFocusInput
   - 使用useRef聚焦input輸入框 
+- useRefOnClickButNotRerender
+  - 使用useRef添加input以至於資料與狀態不一

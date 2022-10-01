@@ -31,6 +31,8 @@
   - 使用useContext簡化consumer 
 - useContextNestContext
   - 巢狀context只有內層會被顯示
+- useContextRerenderProblem
+  - useContext造成多次rerender
 - useReducerInOneComponent
   - 使用useReducer在同一個component
 - useReducerInComponent

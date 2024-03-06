@@ -1,61 +1,61 @@
-# React的各種Hook小範例與簡易解說
+# React 的各種 Hook 小範例與簡易解說
 
-以下為各個branch名稱和內容的大綱
+以下為各個 branch 名稱和內容的大綱
 - noHookNoRender
-  - 沒有搭配Hook無法渲染畫面
+  - 沒有搭配 Hook 無法渲染畫面
 - useStateButNoUpdateFunction
-  - 使用useState，不使用更新函式
+  - 使用 useState，不使用更新函式
 - useStateButNumberAddOne
-  - 使用setTimeOut並不使用更新函式
+  - 使用 setTimeOut 並不使用更新函式
 - useStateSetState
   - 使用更新函式
 - useStateUseUpdateFunction
-  - 使用setTimeOut並使用更新函式
+  - 使用 setTimeOut 並使用更新函式
 - useStateNoLazyInitial
-  - 沒有lazyInitial
-- useStateUseLazyInitialzer
-  - 使用LazyInitialzer
+  - 沒有 lazyInitial
+- useStateUseLazyInitializer
+  - 使用 LazyInitializer
 - useEffectPrint
-  - 使用useEffect僅在畫面載入時印
+  - 使用 useEffect 僅在畫面載入時印
 - useEffectPrintManyTimes
-  - 使用useEffect當畫面任何重新渲染時候印
+  - 使用 useEffect 當畫面任何重新渲染時候印
 - useEffectIntervalCleanUp
-  - 使用useEffect並且cleanUp
+  - 使用 useEffect 並且 cleanUp
 - useEffectCountdownExample
-  - 使用useEffect用倒數計時器範例
+  - 使用 useEffect 用倒數計時器範例
 - propsDrilling
-  - 造成props drilling
+  - 造成 props drilling
 - useContextProvideConsumer
-  - 使用context加入provide和consumer解決過度傳遞
+  - 使用 context 加入 provide 和 consumer 解決過度傳遞
 - useContextSimplifyConsumer
-  - 使用useContext簡化consumer 
+  - 使用 useContext 簡化 consumer 
 - useContextNestContext
-  - 巢狀context只有內層會被顯示
+  - 巢狀 context 只有內層會被顯示
 - useContextRerenderProblem
-  - useContext造成多次rerender
+  - useContext 造成多次 rerender
 - useReducerInOneComponent
-  - 使用useReducer在同一個component
+  - 使用 useReducer 在同一個 component
 - useReducerInComponent
-  - 使用useReducer將reducer拆出
+  - 使用 useReducer 將 reducer 拆出
 - useReducerAddPayload
-  - 使用useReducer添加payload
+  - 使用 useReducer 添加 payload
 - separateReducerAndInitialState
-  -  使用useReducer拆分出initialState
-- useReducerDinefineActiontypeActionCreater
-  - 使用useReducer定義actionType和actionCreater
+  -  使用 useReducer 拆分出 initialState
+- useReducerDefineActiontypeActionCreater
+  - 使用 useReducer 定義 actionType 和 actionCreater
 - memoChildComponentRender
-  - 未使用React.memo
+  - 未使用 React.memo
 - memoWrapChildComponent
-  - 使用React.memo包裹住component
+  - 使用 React.memo 包裹住 component
 - memoButPropsIsObject
-  - 使用Reactmemo但是prop是物件
-- memoAddNumberProps
-  - 使用指定的prop作為memo重新渲染的依據
+  - 使用 React.memo 但是 prop 是物件
+- memoAssignCompare
+  - 使用指定的 prop 作為 memo 重新渲染的依據
 - useRefInitHello
-  - 使用useRef代入字串"hello"
+  - 使用 useRef 代入字串"hello"
 - useRefOnClickAndFocusInput
-  - 使用useRef聚焦input輸入框 
+  - 使用 useRef 聚焦 input 輸入框 
 - useRefOnClickButNotRerender
-  - 使用useRef添加input以至於資料與狀態不一
+  - 使用 useRef 添加 input 以至於資料與狀態不一
 - ForwardRefMyInput
-  - 使用useRef搭配forwardRef使父層可存取子層component的DOM
+  - 使用 useRef 搭配 forwardRef 使父層可存取子層 component 的 DOM

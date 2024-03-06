@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-const Todo = ({ name }) => {
+const Todo = ({ name, Object }) => {
 	console.log("我被執行了");
 
 	const listData = [

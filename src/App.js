@@ -5,6 +5,7 @@ const App = () => {
 	const [number, setNumber] = useState(0);
 	const [value, setValue] = useState("");
 	const [name, setName] = useState("");
+	const Object = {};
 	return (
 		<>
 			<div>{number}</div>
@@ -23,7 +24,7 @@ const App = () => {
 			>
 				送出
 			</button>
-			<Todo name={name} />
+			<Todo name={name} Object={Object} />
 		</>
 	);
 };

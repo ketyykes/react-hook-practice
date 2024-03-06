@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const Todo = ({ name }) => {
 	console.log("我被執行了");
@@ -20,4 +20,4 @@ const Todo = ({ name }) => {
 	);
 };
 
-export default Todo;
+export default memo(Todo);

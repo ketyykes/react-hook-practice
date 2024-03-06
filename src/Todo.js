@@ -20,4 +20,14 @@ const Todo = ({ name, Object }) => {
 	);
 };
 
-export default memo(Todo);
+export default memo(Todo, (oldProps, newProps) => {
+	function deepCompare(a, b) {
+		return JSON.stringify(a) === JSON.stringify(b);
+	}
+	if (
+		deepCompare(oldProps.Object, newProps.Object) &&
+		oldProps.name === newProps.name
+	) {
+		return true;
+	}
+});
